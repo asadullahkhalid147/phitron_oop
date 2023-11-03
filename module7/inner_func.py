@@ -2,7 +2,7 @@
 def double_decker():
     print('starting the double decker')
     def inner_fun():
-        print('inside the inner')  #we declare a function under a function
+        print('inside the inner')  #we can declare a function under a function
         return 3000
 
     return inner_fun

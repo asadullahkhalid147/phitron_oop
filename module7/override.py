@@ -27,14 +27,21 @@ class Cricketer(Person):
         print('gym a poisa diye gham jhorai')
 
     # dandaar or magic method. this is special method. overloading 
+    #(+)sign operator overload
     def __add__(self,other):
         return self.age + other.age # duita cricketer object ke jog(+) kori. tahole 1st cricketer er age and second cricketer er age jog kore dibe.
 
+    # (*) sign operator overload
     def __mul__(self,other):
         return self.weight * other.weight
     
+    # len overload
     def __len__(self):
         return self.height
+    
+    # > operator overload
+    def __gt__(self,other):
+        return self.age>other.age
 
 sakib = Cricketer('sakib',38,68,91,'BD')
 mushi = Cricketer('mushi',36,65,78,'BD')
